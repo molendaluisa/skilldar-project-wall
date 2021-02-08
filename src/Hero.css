@@ -5,12 +5,24 @@
   align-items: center;
   text-align: center;
   color: #eff3f5;
-  background-image: url("images/heroMobile.jpg");
   width: 375px;
   height: 250px;
 }
 
+.Hero::before {
+  content: '';
+  background-image: url("images/heroMobile.png");
+  background-size: 375px 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
 .Hero h1 {
+  position: relative;
   height: 80px;
   font-weight: 700;
   font-size: 32px;
@@ -18,6 +30,7 @@
   margin: 63px 54px 0 54px;
 }
 .Hero h2 {
+  position: relative;
   height: 25px;
   font-weight: 400;
   font-size: 18px;
