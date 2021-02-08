@@ -12,7 +12,9 @@
 .Hero::before {
   content: '';
   background-image: url("images/heroMobile.png");
-  background-size: 375px 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   position: absolute;
   top: 0;
   bottom: 0;
@@ -48,6 +50,9 @@
     background-position-y: -360px;
     width: 100vw;
     height: 275px;
+  }
+  .Hero::before {
+    background-image:none;
   }
   .Hero h1 {
     font-size: 48px;
