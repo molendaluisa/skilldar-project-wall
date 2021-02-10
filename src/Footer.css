@@ -18,6 +18,9 @@
   text-decoration: none;
   color: #8D8D8E;
 }
+.Footer a:hover {
+  cursor: pointer;
+}
 
 .Footer .rights {
   font-size: 10px;
