@@ -1,0 +1,15 @@
+.App .card-wall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 813px) {
+  .App .card-wall {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 45px 30px 45px;
+  }
+}

@@ -4,4 +4,9 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   background: #26272f;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
