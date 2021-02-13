@@ -4,7 +4,6 @@ import Header from './Header';
 import Hero from './Hero';
 import Search from './Search';
 import CardContainer from './CardContainer';
-import Pagination from './Pagination';
 import Footer from './Footer';
 import { useDispatch, useSelector } from "react-redux";
 import {fetchMovies, selectMovies} from './movies';
@@ -33,7 +32,6 @@ export default function App() {
       <div className="card-wall">
         {moviesList}
       </div>
-      {/* <Pagination /> */}
       <Footer />
     </div>
   );
