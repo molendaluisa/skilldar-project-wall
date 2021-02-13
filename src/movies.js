@@ -49,7 +49,7 @@ export function fetchMovies(searchTearm) {
           let moviesInfoCalls = []
           info.total = data.totalResults
           data.Search.forEach(result => {
-            moviesInfoCalls.push(fetch('http://www.omdbapi.com/?apikey=41d60d7c&i=' + result.imdbID))
+            moviesInfoCalls.push(fetch('https://www.omdbapi.com/?apikey=41d60d7c&i=' + result.imdbID))
           })
 
 
