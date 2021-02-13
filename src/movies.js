@@ -33,7 +33,7 @@ export default moviesSlice.reducer
 
 
 export function fetchMovies(searchTearm) {
-  const response = fetch('http://www.omdbapi.com/?s=' + searchTearm + '&page=2&apikey=41d60d7c')
+  const response = fetch('https://www.omdbapi.com/?s=' + searchTearm + '&page=2&apikey=41d60d7c')
   var info = {
     movies: [],
     total: 0
