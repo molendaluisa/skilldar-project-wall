@@ -1,0 +1,55 @@
+
+.Pagination .desktop {
+  display: none
+}
+.Pagination .mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.Pagination ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.Pagination li {
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 400;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  background-color: #2e2e38;
+  text-align: center;
+  padding-top: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.Pagination li a {
+  font-weight: 300;
+  padding-top: 1px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+.Pagination li.active {
+  padding-top: 4px;
+  color: #2e2e38;
+  background-color: #b0b3b5;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (min-width: 813px) {
+  .Pagination {
+    margin: 0 45px;
+  }
+  .Pagination .mobile {
+    display: none 
+  }
+  .Pagination .desktop {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

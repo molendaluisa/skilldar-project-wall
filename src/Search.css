@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap");
 
 .Search {
-  margin: 0 16px;
+  margin: -28px 16px 0;
   border-bottom: 3px solid rgba(141, 141, 142, 0.35);
 }
-.Search input-container {
-  position: relative;
+.Search .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Search input {
-  background: #202123;
-  border: 2px solid #363a42;
-  display: block;
-  margin: 0 auto;
   width: 300px;
   height: 52px;
-  margin-top: -28px;
+  background: #202123;
+  border: 2px solid #363a42;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
@@ -34,9 +33,12 @@
   padding-left: 36px;
 }
 .Search img {
+  padding-left: 15px;
+  padding-top: 18px;
   position: absolute;
-  top: 295px;
-  left: 50px;
+  /* display: block;
+  margin: 0 auto;
+  margin-left: 32px; */
 }
 .Search footer {
   color: #b0b3b5;
@@ -48,14 +50,10 @@
 }
 @media (min-width: 813px) {
   .Search {
-    margin: 0 45px;
+    margin: -28px 45px 0;
   }
   .Search input {
     width: 672px;
-  }
-  .Search img {
-    top: 320px;
-    left: 515px;
   }
   .Search footer {
     padding: 12px 0 18px 0;
